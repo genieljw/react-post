@@ -1,0 +1,92 @@
+/* 전체적인 페이지 스타일 */
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+/* 글 제목과 내용 리스트에 대한 스타일 */
+.App-header {
+  background-color: #f8f9fa; /* 밝은 배경색 */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* 글 목록 스타일 */
+.post-list {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-item {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-item h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+.post-item p {
+  color: #555;
+}
+
+/* 게시물 작성 폼 스타일 */
+.post-form {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-form input, .post-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.post-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.post-form button:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+
+/* 모바일 화면에서 글 목록 및 폼을 보기 좋게 배치 */
+@media (max-width: 768px) {
+  .post-form, .post-list {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .post-item h3 {
+    font-size: 1.2rem;
+  }
+}
